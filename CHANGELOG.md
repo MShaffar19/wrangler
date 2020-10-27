@@ -1,5 +1,108 @@
 # Changelog
 
+## 1.12.0
+
+- ### Features
+
+  - **Add support for Cron triggers - [ObsidianMinor], [issue/1574] [pull/1592]**
+
+    Detailed description
+
+    [author]: https://github.com/Author
+
+    [pull/PR #]: https://github.com/cloudflare/wrangler/pull/PR #
+    [issue/Issue #]: https://github.com/cloudflare/wrangler/issues/Issue #
+
+  - **Structured output for `wrangler publish` - [nataliescottdavidson], [issue/1460] [pull/1538] [pull/1528] [pull/1522]**
+
+    Detailed description
+
+    [author]: https://github.com/Author
+
+    [pull/PR #]: https://github.com/cloudflare/wrangler/pull/PR #
+    [issue/Issue #]: https://github.com/cloudflare/wrangler/issues/Issue #
+
+    - **Upload .well-known dotfiles - [nataliescottdavidson], [issue/980] [pull/1566]**
+
+      Wrangler sites users requested the ability to include the .well-known folder
+      without including all hidden files.
+
+      [author]: https://github.com/Author
+
+      [pull/PR #]: https://github.com/cloudflare/wrangler/pull/PR #
+      [issue/Issue #]: https://github.com/cloudflare/wrangler/issues/Issue #
+
+- ### Fixes
+
+  - **Handle leading slashes in KV keys - [koeninger], [issue/1560] [pull/1559]**
+
+    [author]: https://github.com/Author
+
+    [pull/PR #]: https://github.com/cloudflare/wrangler/pull/PR #
+    [issue/Issue #]: https://github.com/cloudflare/wrangler/issues/Issue #
+
+- ### Maintenance
+
+  - **Update stalebot settings - [ispivey], [pull/1561]**
+
+    Stalebot now waits 180 days to mark stale, it marks 'timed out' instead of 'wontfix', and added 'never stale' tag.
+
+    [author]: https://github.com/Author
+
+    [pull/PR #]: https://github.com/cloudflare/wrangler/pull/PR #
+    [issue/Issue #]: https://github.com/cloudflare/wrangler/issues/Issue #
+
+  - **Pin Rust to 1.47 and fix clippy lints - [ObsidianMinor], [pull/1609]**
+
+    Detailed description
+
+    [author]: https://github.com/Author
+
+    [pull/PR #]: https://github.com/cloudflare/wrangler/pull/PR #
+    [issue/Issue #]: https://github.com/cloudflare/wrangler/issues/Issue #
+
+  - **Copy edit on --host argument description - [thmsdnnr], [issue/1545] [pull/1564]**
+    [Author]: https://github.com/Author
+    [pull/PR #]: https://github.com/cloudflare/wrangler/pull/PR #
+    [issue/Issue #]: https://github.com/cloudflare/wrangler/issues/Issue #
+
+    - **Hide stderr from browser process - [jspspike], [pull/1516]**
+
+      Wrangler login had the potential to cause random terminal output.
+
+      [author]: https://github.com/Author
+
+      [pull/PR #]: https://github.com/cloudflare/wrangler/pull/PR #
+      [issue/Issue #]: https://github.com/cloudflare/wrangler/issues/Issue #
+
+- ### Docs
+
+  - **Instruct users to install Node with nvm - [JasonCoombs], [issue/1517] [pull/1518]**
+
+  Permissions errors occur when users install Node or npm with a different package
+  manager.
+
+  [author]: https://github.com/Author
+
+  [pull/PR #]: https://github.com/cloudflare/wrangler/pull/PR #
+  [issue/Issue #]: https://github.com/cloudflare/wrangler/issues/Issue #
+
+  - **Update links to new docs- [stof] [tuladhar] [ispivey] [rita3ko], [pull/1552] [pull/1532] [pull/1526] [pull/1519]**
+
+    [author]: https://github.com/Author
+
+    [pull/PR #]: https://github.com/cloudflare/wrangler/pull/PR #
+    [issue/Issue #]: https://github.com/cloudflare/wrangler/issues/Issue #
+
+  - **Docs for ARM users - [Author], [pull/1499]**
+
+    Detailed description
+
+    [author]: https://github.com/Author
+
+    [pull/PR #]: https://github.com/cloudflare/wrangler/pull/PR #
+    [issue/Issue #]: https://github.com/cloudflare/wrangler/issues/Issue #
+
 ## 🌊 1.11.0
 
 - ### Features
@@ -15,7 +118,7 @@
 
     When running `wrangler dev` as an authenticated user, your requests will now run on the same servers that Cloudflare Workers run on in production. This means that what you see is what you get. `wrangler dev` should behave exactly like production, though we still recommend deploying to a staging website before going to production in order to ensure your changes are safe. This change means you get access to things like `request.cf`, the Cache API, and any Cloudflare settings you've applied in the dashboard while developing your Workers.
 
-    [EverlastingBugstopper]: https://github.com/EverlastingBugstopper
+    [everlastingbugstopper]: https://github.com/EverlastingBugstopper
     [avidal]: https://github.com/avidal
     [jwheels]: https://github.com/jwheels
     [pull/1085]: https://github.com/cloudflare/wrangler/pull/1085
@@ -54,7 +157,7 @@
 
   - **Check if `rustc` is installed before building a Rust project - [ObsidianMinor], [issue/487] [pull/1461]**
 
-    [ObsidianMinor]: https://github.com/ObsidianMinor
+    [obsidianminor]: https://github.com/ObsidianMinor
     [pull/1461]: https://github.com/cloudflare/wrangler/pull/1461
     [issue/487]: https://github.com/cloudflare/wrangler/issues/487
 
@@ -62,7 +165,7 @@
 
     When a `preview_id` is needed, the error message directs the user to add it to their `wrangler.toml`.
 
-    [EverlastingBugstopper]: https://github.com/EverlastingBugstopper
+    [everlastingbugstopper]: https://github.com/EverlastingBugstopper
     [pull/1465]: https://github.com/cloudflare/wrangler/pull/1465
     [issue/1458]: https://github.com/cloudflare/wrangler/issues/1458
 
@@ -100,7 +203,7 @@
 
   - **Workers Unlimited is now Workers Bundled - [EverlastingBugstopper], [issue/1466] [pull/1467]**
 
-    [EverlastingBugstopper]: https://github.com/EverlastingBugstopper
+    [everlastingbugstopper]: https://github.com/EverlastingBugstopper
     [pull/1467]: https://github.com/cloudflare/wrangler/pull/1467
     [issue/1466]: https://github.com/cloudflare/wrangler/issues/1466
 
@@ -134,7 +237,7 @@
 
     Before, `wrangler dev` would listen on `[::1]:8787` by default, and call it `localhost` in the terminal output. This was confusing for developers whose `localhost` resolves to IPv4 and not IPv6. Now, `wrangler dev` will listen on `127.0.0.1:8787` by default. This can be overriden by passing values via the `--ip` and `--port` flags.
 
-    [EverlastingBugstopper]: https://github.com/EverlastingBugstopper
+    [everlastingbugstopper]: https://github.com/EverlastingBugstopper
     [pull/1405]: https://github.com/cloudflare/wrangler/pull/1405
     [issue/1198]: https://github.com/cloudflare/wrangler/issues/1198
 
@@ -142,7 +245,7 @@
 
     When you create a new project with `wrangler generate`, it directs you to the Cloudflare Dashboard to find your `account_id` and `zone_id`. However, this flow only worked if you had your own domain. Developers who only use `workers.dev` for their Workers were directed to a page that does not exist! This message now points everyone to a page where they can find the information that they need.
 
-    [EverlastingBugstopper]: https://github.com/EverlastingBugstopper
+    [everlastingbugstopper]: https://github.com/EverlastingBugstopper
     [pull/1395]: https://github.com/cloudflare/wrangler/pull/1395
     [issue/1364]: https://github.com/cloudflare/wrangler/issues/1364
 
@@ -154,14 +257,14 @@
 
     However, we missed a very common case where developers already have a production namespace defined in their `wrangler.toml` and they want to add a preview namespace. When this is the case, we returned an error message intended to only be thrown when running either wrangler preview or wrangler dev. This is now fixed!
 
-    [EverlastingBugstopper]: https://github.com/EverlastingBugstopper
+    [everlastingbugstopper]: https://github.com/EverlastingBugstopper
     [pull/1414]: https://github.com/cloudflare/wrangler/pull/1414
 
   - **Allow multiple response header values in `wrangler dev` - [EverlastingBugstopper], [issue/1412] [pull/1413]**
 
     Before, `wrangler dev` would not properly handle response headers that have multiple values. We would iterate over all response headers coming from the Workers runtime, and "insert" them into the header map instead of appending them. This is no longer the case and response headers should now work as expected. More details on this issue can be found [here](https://github.com/cloudflare/wrangler/issues/1412#issuecomment-649764506).
 
-    [EverlastingBugstopper]: https://github.com/EverlastingBugstopper
+    [everlastingbugstopper]: https://github.com/EverlastingBugstopper
     [pull/1413]: https://github.com/cloudflare/wrangler/pull/1413
     [issue/1412]: https://github.com/cloudflare/wrangler/issues/1412
 
@@ -169,7 +272,7 @@
 
     When KV namespace support was initially added to Wrangler, we documented using `kv-namespaces` in `wrangler.toml`. Unfortunately, the `-` was not consistent with other fields such as `zone_id` and `account_id`, so the decision was made to allow both `kv-namespaces` and `kv_namespaces`. When this change was introduced, it worked with top level `kv_namespaces` entries, but not in environments. This is now fixed! You can now use `kv_namespaces` everywhere you can use `kv-namespaces`.
 
-    [EverlastingBugstopper]: https://github.com/EverlastingBugstopper
+    [everlastingbugstopper]: https://github.com/EverlastingBugstopper
     [pull/1409]: https://github.com/cloudflare/wrangler/pull/1409
     [issue/1408]: https://github.com/cloudflare/wrangler/issues/1408
 
@@ -184,9 +287,9 @@
 
     When we introduced our own version checking for Wrangler we stopped using `Krate::install`. This PR just removes that unused code.
 
-    [EverlastingBugstopper]: https://github.com/EverlastingBugstopper
+    [everlastingbugstopper]: https://github.com/EverlastingBugstopper
     [pull/1410]: https://github.com/cloudflare/wrangler/pull/1410
-    [issue/Issue #]: https://github.com/cloudflare/wrangler/issues/247
+    [issue/issue #]: https://github.com/cloudflare/wrangler/issues/247
 
 ## 💪 1.10.2
 
@@ -206,16 +309,16 @@
 
   - **reinstate longer timeout on bulk uploads for sites - [ashleymichal], [pull/1391]**
 
-      In 1.10.0 we introduced a bug that reduced the timeout for bulk uploads back to the standard 30 seconds. This fixes that and restores the five minute bulk upload/delete timeout.
+    In 1.10.0 we introduced a bug that reduced the timeout for bulk uploads back to the standard 30 seconds. This fixes that and restores the five minute bulk upload/delete timeout.
 
     [ashleymichal]: https://github.com/ashleymichal
     [pull/1391]: https://github.com/cloudflare/wrangler/pull/1391
 
   - **Increase default timeout to one minute - [EverlastingBugstopper], [pull/1392]**
 
-      For folks with slower connections we're increasing the timeout for API requests.
+    For folks with slower connections we're increasing the timeout for API requests.
 
-    [EverlastingBugstopper]: https://github.com/EverlastingBugstopper
+    [everlastingbugstopper]: https://github.com/EverlastingBugstopper
     [pull/1392]: https://github.com/cloudflare/wrangler/pull/1392
 
 ## ♻️ 1.10.0
@@ -224,11 +327,12 @@
 
   - **`wrangler dev` now requires that you specify "preview" versions of KV namespaces - [EverlastingBugstopper], [ashleymichal], [issue/1032] [pull/1357] [pull/1359] [pull/1360]**
 
-    In order to prevent you from accidentally stomping on production data in Workers KV, we're introducing the concept of explicit *preview namespaces*. When running `wrangler dev`, if you're using Workers KV, you'll need to specify a specific KV Namespace to use when previewing the Worker.
+    In order to prevent you from accidentally stomping on production data in Workers KV, we're introducing the concept of explicit _preview namespaces_. When running `wrangler dev`, if you're using Workers KV, you'll need to specify a specific KV Namespace to use when previewing the Worker.
 
     Specifically, this change:
-    * Adds a `preview_id` field to items in `kv_namespaces` in `wrangler.toml` that _must_ be provided in order to preview a worker that has kv namespaces.
-    * also adds `--preview` to kv commands in order to interact with them instead of production namespaces.
+
+    - Adds a `preview_id` field to items in `kv_namespaces` in `wrangler.toml` that _must_ be provided in order to preview a worker that has kv namespaces.
+    - also adds `--preview` to kv commands in order to interact with them instead of production namespaces.
 
     If you define a KV Namespace in your `wrangler.toml` but don't specify a `preview_id`, and then try to run `wrangler dev`, you'll see the following:
 
@@ -240,7 +344,7 @@
 
     More details can be found in the [documentation](http://localhost:1313/workers/tooling/wrangler/configuration/#kv_namespaces).
 
-    [EverlastingBugstopper]: https://github.com/EverlastingBugstopper
+    [everlastingbugstopper]: https://github.com/EverlastingBugstopper
     [ashleymichal]: https://github.com/ashleymichal
     [pull/1357]: https://github.com/cloudflare/wrangler/pull/1357
     [pull/1359]: https://github.com/cloudflare/wrangler/pull/1359
@@ -267,7 +371,7 @@
 
     wrangler will now let you know if there's an update available, and will only bug you once every 24 hours.
 
-    [EverlastingBugstopper]: https://github.com/EverlastingBugstopper
+    [everlastingbugstopper]: https://github.com/EverlastingBugstopper
     [jspspike]: https://github.com/jspspike
     [pull/1190]: https://github.com/cloudflare/wrangler/pull/1190
     [pull/1331]: https://github.com/cloudflare/wrangler/pull/1331
@@ -278,6 +382,7 @@
     Previously, you would see not-super-helpful error messages if your API Token was expired or missing some permissions, didn't have Workers Unlimited enabled and tried to upload to KV, or tried to create a namespace that already existed. But we strive for helpful, informative error messages!
 
     Now, you'll see the following error messages as appropriate:
+
     ```
     10026 => "You will need to enable Workers Unlimited for your account before you can use this feature.",
     10014 => "Namespace already exists, try using a different namespace.",
@@ -304,7 +409,7 @@
 
     We shouldn't install wasm-pack if your project doesn't need it. We thought we fixed this in 1.7.0, but we didn't. This time it's fixed for real, we swear.
 
-    [EverlastingBugstopper]: https://github.com/EverlastingBugstopper
+    [everlastingbugstopper]: https://github.com/EverlastingBugstopper
     [pull/1344]: https://github.com/cloudflare/wrangler/pull/1344
     [issue/745]: https://github.com/cloudflare/wrangler/issues/745
 
@@ -330,7 +435,7 @@
 
     We actually didn't have one before, so now we do!
 
-    [EverlastingBugstopper]: https://github.com/EverlastingBugstopper
+    [everlastingbugstopper]: https://github.com/EverlastingBugstopper
     [pull/1346]: https://github.com/cloudflare/wrangler/pull/1346
 
   - **Deprecate undocumented KV `bucket` attribute - [ashleymichal], [issue/1136] [pull/1355]**
@@ -350,7 +455,7 @@
 
   - **Add SECURITY.md with responsible reporting guidelines - [EverlastingBugstopper], [pull/1345]**
 
-    [EverlastingBugstopper]: https://github.com/EverlastingBugstopper
+    [everlastingbugstopper]: https://github.com/EverlastingBugstopper
     [pull/1345]: https://github.com/cloudflare/wrangler/pull/1345
 
 ## 🐼 1.9.2
@@ -381,7 +486,7 @@
 
     When starting up `wrangler dev`, it now checks to see if the requested port is already in use and returns a helpful error message if that's the case.
 
-    [EverlastingBugstopper]: https://github.com/EverlastingBugstopper
+    [everlastingbugstopper]: https://github.com/EverlastingBugstopper
     [pull/1272]: https://github.com/cloudflare/wrangler/pull/1272
     [issue/1122]: https://github.com/cloudflare/wrangler/issues/1122
 
@@ -391,7 +496,7 @@
 
     You may have noticed some very verbose and over-eager installation output when running Wrangler. Every `webpack` type build would install `wranglerjs` and `wasm-pack`. This was... super annoying and not a great experience, especially when running `wrangler preview --watch` or `wrangler dev`. Each time you'd change a file, Wrangler would reinstall those external dependencies. This doesn't happen anymore! Wrangler will still download and install these external dependencies, but only if you have an outdated version.
 
-    [EverlastingBugstopper]: https://github.com/EverlastingBugstopper
+    [everlastingbugstopper]: https://github.com/EverlastingBugstopper
     [pull/1003]: https://github.com/cloudflare/wrangler/pull/1003
     [issue/768]: https://github.com/cloudflare/wrangler/issues/768
 
@@ -399,7 +504,7 @@
 
     When running `wrangler preview --watch` or `wrangler dev` on a `webpack` type project, Wrangler will provide a new build artifact and upload it via the Cloudflare API. Before, we'd start a long-running `webpack --watch` command, _in addition to_ running `webpack` on every change. We were running two builds on every change! This was not great and has been removed. This, combined with the above fix removing redundant installations, should greatly improve your dev iteration cycles.
 
-    [EverlastingBugstopper]: https://github.com/EverlastingBugstopper
+    [everlastingbugstopper]: https://github.com/EverlastingBugstopper
     [pull/1269]: https://github.com/cloudflare/wrangler/pull/1269
     [issue/1219]: https://github.com/cloudflare/wrangler/issues/1219
 
@@ -407,7 +512,7 @@
 
     `wrangler dev` initiates a WebSocket connection via the Cloudflare API in order to stream `console.log` messages to your terminal. Over time, it's very likely that the WebSocket would be disconnected. When this happened, Wrangler would panic, requiring developers to restart the process. Now, if `wrangler dev` gets disconnected, it will issue a reconnect request, allowing developers to run `wrangler dev` as long as they are connected to the Internet.
 
-    [EverlastingBugstopper]: https://github.com/EverlastingBugstopper
+    [everlastingbugstopper]: https://github.com/EverlastingBugstopper
     [pull/1276]: https://github.com/cloudflare/wrangler/pull/1276
     [issue/1241]: https://github.com/cloudflare/wrangler/issues/1241
 
@@ -417,7 +522,7 @@
 
     We love external contributors, and what better way to help get folks kickstarted than to add some documentation on developing Wrangler? Check out [CONTRIBUTING.md](./CONTRIBUTING.md) if you're interested in helping out.
 
-    [EverlastingBugstopper]: https://github.com/EverlastingBugstopper
+    [everlastingbugstopper]: https://github.com/EverlastingBugstopper
     [pull/1288]: https://github.com/cloudflare/wrangler/pull/1288
     [issue/270]: https://github.com/cloudflare/wrangler/issues/270
 
@@ -425,14 +530,14 @@
 
     We deprecated `wrangler publish --release` a long time ago in favor of environments, but it's still an accepted argument to preserve backwards compatibility. Now, it no longer shows up in `wrangler publish --help` as an accepted argument, even though it's still an alias of `wrangler publish`.
 
-    [EverlastingBugstopper]: https://github.com/EverlastingBugstopper
+    [everlastingbugstopper]: https://github.com/EverlastingBugstopper
     [pull/1289]: https://github.com/cloudflare/wrangler/pull/1289
 
   - **Updates license file to wrangler@cloudflare.com - [EverlastingBugstopper], [pull/1290]**
 
     The copyright in our MIT license was outdated and pointed to the email address of @ashleygwilliams (who no longer works at Cloudflare 😢). Now it points to [wrangler@cloudflare.com](mailto:wrangler@cloudflare.com) :)
 
-    [EverlastingBugstopper]: https://github.com/EverlastingBugstopper
+    [everlastingbugstopper]: https://github.com/EverlastingBugstopper
     [pull/1290]: https://github.com/cloudflare/wrangler/pull/1290
 
   - **Add Dependabot to Wrangler - [ispivey], [pull/1294]**
@@ -454,7 +559,7 @@
     `cargo clippy` is a helpful little tool that helps you write more idiomatic Rust. Over time, we've developed an immunity to the warnings produced by this tool, and we took a stab at cleaning some of them up.
 
     [ashleymichal]: https://github.com/ashleymichal
-    [EverlastingBugstopper]: https://github.com/EverlastingBugstopper
+    [everlastingbugstopper]: https://github.com/EverlastingBugstopper
     [pull/1305]: https://github.com/cloudflare/wrangler/pull/1305
     [pull/1306]: https://github.com/cloudflare/wrangler/pull/1306
 
@@ -468,14 +573,14 @@
 
     [ashleymichal]: https://github.com/ashleymichal
     [gabbifish]: https://github.com/gabbifish
-    [EverlastingBugstopper]: https://github.com/EverlastingBugstopper
+    [everlastingbugstopper]: https://github.com/EverlastingBugstopper
     [pull/1182]: https://github.com/cloudflare/wrangler/pull/1182
 
   - **Much faster build times for Workers Sites projects - [EverlastingBugstopper], [pull/1221]**
 
     When you deploy a Workers Site, Wrangler generates a unique hash for each file. It does this so that your Worker does not serve stale files from Cloudflare's edge cache to end users. Unfortunately, generating these hashes took a really really long time since we were using a cryptographically strong hash. Since we're just using this hash for cache invalidation, we decided it's not necessary to use such a complicated algorithm. We switched to using [xxhash](https://github.com/Cyan4973/xxHash) and have seen noticeable speed improvements.
 
-    [EverlastingBugstopper]: https://github.com/EverlastingBugstopper
+    [everlastingbugstopper]: https://github.com/EverlastingBugstopper
     [pull/1221]: https://github.com/cloudflare/wrangler/pull/1221
 
   - **Add --url to wrangler preview - [larkin-nz], [issue/351] [pull/1001]**
@@ -506,7 +611,7 @@
 
     Wrangler likes to print colors where appropriate, and now there is a standard module for printing different colors that is used across the codebase.
 
-    [EverlastingBugstopper]: https://github.com/EverlastingBugstopper
+    [everlastingbugstopper]: https://github.com/EverlastingBugstopper
     [pull/1248]: https://github.com/cloudflare/wrangler/pull/1248
 
   - **Suggests `wrangler init` if `wrangler.toml` does not exist - [ashleymichal], [issue/827] [pull/1239]**
@@ -523,7 +628,7 @@
 
     Most fields defined in `wrangler.toml` are one word, but some of them are two! In the past, we usually use `_` to separate words, but somehow we used a `-` for `kv-namespaces`. This was inconsistent and a bit confusing. Now we allow both for the sake of backwards compatibility, but in the future we'll try to stick to `snake_case`.
 
-    [EverlastingBugstopper]: https://github.com/EverlastingBugstopper
+    [everlastingbugstopper]: https://github.com/EverlastingBugstopper
     [pull/1169]: https://github.com/cloudflare/wrangler/pull/1169
     [issue/1158]: https://github.com/cloudflare/wrangler/issues/1158
 
@@ -538,7 +643,7 @@
 
     In the last release we added an error message in `wrangler dev` for failed uploads. Unfortunately it was a bit overeager and some information about different types of errors were lost. This behavior has been fixed!
 
-    [EverlastingBugstopper]: https://github.com/EverlastingBugstopper
+    [everlastingbugstopper]: https://github.com/EverlastingBugstopper
     [pull/1251]: https://github.com/cloudflare/wrangler/pull/1251
 
 - ### Maintenance
@@ -547,7 +652,7 @@
 
     Wrangler sure does send a lot of API requests! Before, about half of the API requests Wrangler sent would send them with the HTTP header `User-Agent: wrangler`. Now, all requests sent by Wrangler include that User Agent. This lets the APIs we use know that the request is coming from this tool. Yay for being good [netizens](https://www.merriam-webster.com/dictionary/netizen)!
 
-    [EverlastingBugstopper]: https://github.com/EverlastingBugstopper
+    [everlastingbugstopper]: https://github.com/EverlastingBugstopper
     [pull/1070]: https://github.com/cloudflare/wrangler/pull/1070
     [issue/731]: https://github.com/cloudflare/wrangler/issues/731
 
@@ -555,7 +660,7 @@
 
     No behavior changes with this one, just some improvements to code layout and some extra documentation comments. Check it out if you're interested!
 
-    [EverlastingBugstopper]: https://github.com/EverlastingBugstopper
+    [everlastingbugstopper]: https://github.com/EverlastingBugstopper
     [pull/1220]: https://github.com/cloudflare/wrangler/pull/1220
 
 ## 🎭 1.8.4
@@ -566,7 +671,7 @@
 
     Wrangler started removing user's authentication configuration files on reinstallation from npm - this is no good and is fixed in this release.
 
-    [EverlastingBugstopper]: https://github.com/EverlastingBugstopper
+    [everlastingbugstopper]: https://github.com/EverlastingBugstopper
     [pull/1181]: https://github.com/cloudflare/wrangler/pull/1181
     [issue/1180]: https://github.com/cloudflare/wrangler/issues/1180
 
@@ -574,7 +679,7 @@
 
     Previously, if you tried to pipe a multiline file to `wrangler secret put`, the secret would only upload the first line of the file. This... was not helpful - `cat hello_world.txt | wrangler secret put` should behave as expected with this release.
 
-    [EverlastingBugstopper]: https://github.com/EverlastingBugstopper
+    [everlastingbugstopper]: https://github.com/EverlastingBugstopper
     [pull/1171]: https://github.com/cloudflare/wrangler/pull/1171
     [issue/1132]: https://github.com/cloudflare/wrangler/issues/1132
 
@@ -599,9 +704,9 @@
 
     - Any time an asset manifest is created, you will see the files that are being hashed in real time with a fancy loading spinner - no more waiting without any information!
 
-    - Asset manifest creation is now faster due to a  refactor.
+    - Asset manifest creation is now faster due to a refactor.
 
-    [EverlastingBugstopper]: https://github.com/EverlastingBugstopper
+    [everlastingbugstopper]: https://github.com/EverlastingBugstopper
     [pull/1145]: https://github.com/cloudflare/wrangler/pull/1145
     [issue/897]: https://github.com/cloudflare/wrangler/issues/897
 
@@ -621,7 +726,7 @@
     Error: you must set EITHER workers_dev = true OR provide a zone_id and route/routes.
     ```
 
-    [EverlastingBugstopper]: https://github.com/EverlastingBugstopper
+    [everlastingbugstopper]: https://github.com/EverlastingBugstopper
     [pull/1154]: https://github.com/cloudflare/wrangler/pull/1154
     [issue/1152]: https://github.com/cloudflare/wrangler/issues/1152
 
@@ -631,7 +736,7 @@
 
     In Wrangler 1.8.2, we updated the formatting of some of Wrangler's informational messages. Unfortunately when this was introduced, it came with a bug in `wrangler config` that made the message read out in the wrong order. This is fixed in this release!
 
-    [EverlastingBugstopper]: https://github.com/EverlastingBugstopper
+    [everlastingbugstopper]: https://github.com/EverlastingBugstopper
     [pull/1164]: https://github.com/cloudflare/wrangler/pull/1164
 
 - ### Maintenance
@@ -640,7 +745,7 @@
 
     We no longer use Azure Pipelines as our CI provider, nor do we run non-test builds in CI so we removed those badges from the README.
 
-    [EverlastingBugstopper]: https://github.com/EverlastingBugstopper
+    [everlastingbugstopper]: https://github.com/EverlastingBugstopper
     [pull/1166]: https://github.com/cloudflare/wrangler/pull/1166
 
 ## 🐈 1.8.2
@@ -671,14 +776,14 @@
     Add badge to README that points to npm page for Wrangler.
 
     [pull/1115]: https://github.com/cloudflare/wrangler/pull/1121
-    [tomByrer]: https://github.com/tomByrer
+    [tombyrer]: https://github.com/tomByrer
 
   - **Unify attention-grabbing messages - [EverlastingBugstopper], [pull/1128]**
 
     Use more actionable, easy-to-read information printouts throughout Wrangler.
 
     [pull/1115]: https://github.com/cloudflare/wrangler/pull/1128
-    [tomByrer]: https://github.com/EverlastingBugstopper
+    [tombyrer]: https://github.com/EverlastingBugstopper
 
 ## 😈 1.8.1
 
@@ -690,7 +795,7 @@
 
     [issue/1093]: https://github.com/cloudflare/wrangler/issues/1093
     [pull/1114]: https://github.com/cloudflare/wrangler/pull/1114
-    [EverlastingBugstopper]: https://github.com/EverlastingBugstopper
+    [everlastingbugstopper]: https://github.com/EverlastingBugstopper
 
 - ### Fixes
 
@@ -700,7 +805,7 @@
 
     [issue/1082]: https://github.com/cloudflare/wrangler/issues/1082
     [pull/1117]: https://github.com/cloudflare/wrangler/pull/1117
-    [EverlastingBugstopper]: https://github.com/EverlastingBugstopper
+    [everlastingbugstopper]: https://github.com/EverlastingBugstopper
 
   - **Remove unneeded carriage return in `wrangler secret put` - [gabbifish], [issue/1109] [pull/1112]**
 
@@ -956,7 +1061,7 @@
 
     Previously, when `wrangler publish` ran into authentication errors, the API result would just print to the screen. Now, it prints a helpful hint to users to re-run `wrangler config` to fix the error.
 
-    [EverlastingBugstopper]: https://github.com/EverlastingBugstopper
+    [everlastingbugstopper]: https://github.com/EverlastingBugstopper
     [pull/932]: https://github.com/cloudflare/wrangler/pull/932
     [issue/492]: https://github.com/cloudflare/wrangler/issues/492
 
@@ -976,7 +1081,7 @@
 
     You may have noticed that Wrangler installs `wasm-pack` for your `webpack` projects, which may seem strange since it's the tool we use to build Rust projects. The reason for this is because you can _also_ build Rust using `wasm-pack` and `webpack` in tandem if you use the [`wasm-pack-plugin`](https://github.com/wasm-tool/wasm-pack-plugin). This plugin recently added support for handling the installation of `wasm-pack` which means Wrangler no longer needs to handle those installs.
 
-    [EverlastingBugstopper]: https://github.com/EverlastingBugstopper
+    [everlastingbugstopper]: https://github.com/EverlastingBugstopper
     [pull/849]: https://github.com/cloudflare/wrangler/pull/849
     [issue/745]: https://github.com/cloudflare/wrangler/issues/745
 
@@ -986,7 +1091,7 @@
 
     Updates our CI to update the rust toolchain to the latest stable version after installation.
 
-    [EverlastingBugstopper]: https://github.com/EverlastingBugstopper
+    [everlastingbugstopper]: https://github.com/EverlastingBugstopper
     [pull/893]: https://github.com/cloudflare/wrangler/pull/893
     [issue/887]: https://github.com/cloudflare/wrangler/issues/887
 
@@ -994,7 +1099,7 @@
 
     Now we confirm Wrangler builds against nightly Rust releases!
 
-    [EverlastingBugstopper]: https://github.com/EverlastingBugstopper
+    [everlastingbugstopper]: https://github.com/EverlastingBugstopper
     [pull/895]: https://github.com/cloudflare/wrangler/pull/895
     [pull/898]: https://github.com/cloudflare/wrangler/pull/898
 
@@ -1017,7 +1122,7 @@
 
     This extracts a lot of the logic in Wrangler's installer to an external package, [binary-install], which we will also use for installing wasm-pack on webpack project builds. Switching to this package also has the added benefit of cleaning up the downloaded binary on `npm uninstall -g @cloudflare/wrangler`.
 
-    [EverlastingBugstopper]: https://github.com/EverlastingBugstopper
+    [everlastingbugstopper]: https://github.com/EverlastingBugstopper
     [pull/862]: https://github.com/cloudflare/wrangler/pull/862
     [binary-install]: http://npmjs.org/package/binary-install
 
@@ -1036,7 +1141,7 @@
     webpack_config = "webpack.config.js"
     ```
 
-    [EverlastingBugstopper]: https://github.com/EverlastingBugstopper
+    [everlastingbugstopper]: https://github.com/EverlastingBugstopper
     [pull/847]: https://github.com/cloudflare/wrangler/pull/847
     [issue/296]: https://github.com/cloudflare/wrangler/issues/296
 
@@ -1058,7 +1163,7 @@
 
     `wrangler preview` can now be called with a `--headless` flag that will not open the browser.
 
-    [EverlastingBugstopper]: https://github.com/EverlastingBugstopper
+    [everlastingbugstopper]: https://github.com/EverlastingBugstopper
     [pull/816]: https://github.com/cloudflare/wrangler/pull/816
     [issue/256]: https://github.com/cloudflare/wrangler/issues/256
 
@@ -1074,7 +1179,7 @@
 
     When publishing a Workers Site to your own domain, it's important that the Worker code runs on every path on your domain. This isn't particularly clear, so now when attempting to publish a Workers Site to a route without a trailing asterisk, Wrangler will print a warning message.
 
-    [EverlastingBugstopper]: https://github.com/EverlastingBugstopper
+    [everlastingbugstopper]: https://github.com/EverlastingBugstopper
     [pull/839]: https://github.com/cloudflare/wrangler/pull/839
     [issue/814]: https://github.com/cloudflare/wrangler/issues/814
 
@@ -1106,21 +1211,21 @@
 
     When building a script, Wrangler creates a temporary file. Old versions of Wrangler were quite messy about it, but now it cleans up after itself.
 
-    [EverlastingBugstopper]: https://github.com/EverlastingBugstopper
+    [everlastingbugstopper]: https://github.com/EverlastingBugstopper
     [pull/853]: https://github.com/cloudflare/wrangler/pull/853
 
   - **Fix the help text for `wrangler generate` - [EverlastingBugstopper], [pull/830]**
 
     The default value for a template is now a complete and valid URL instead of a sample project name.
 
-    [EverlastingBugstopper]: https://github.com/EverlastingBugstopper
+    [everlastingbugstopper]: https://github.com/EverlastingBugstopper
     [pull/830]: https://github.com/cloudflare/wrangler/pull/830
 
   - **Remove --version on subcommands - [EverlastingBugstopper], [issue/791] [pull/829]**
 
     Each subcommand in Wrangler used to take a `--version` argument which would print the name of the subcommand. For instance, `wrangler publish --version` would print `wrangler-publish`. This wasn't super helpful, so we've removed that functionality.
 
-    [EverlastingBugstopper]: https://github.com/EverlastingBugstopper
+    [everlastingbugstopper]: https://github.com/EverlastingBugstopper
     [pull/829]: https://github.com/cloudflare/wrangler/pull/829
     [issue/791]: https://github.com/cloudflare/wrangler/issues/791
 
@@ -1135,7 +1240,7 @@
 
     Wrangler's test suite relied on a large number of fixtures that it read in from the file system. Now, it writes the test fixtures itself and does not rely on reading fixtures from the file system.
 
-    [EverlastingBugstopper]: https://github.com/EverlastingBugstopper
+    [everlastingbugstopper]: https://github.com/EverlastingBugstopper
     [pull/854]: https://github.com/cloudflare/wrangler/pull/854
 
   - **Clean up Workers Sites logic - [ashleymichal], [issue/622] [issue/643] [pull/851]**
@@ -1154,14 +1259,14 @@
 
   - **Audit code comments - [EverlastingBugstopper], [pull/846]**
 
-    [EverlastingBugstopper]: https://github.com/EverlastingBugstopper
+    [everlastingbugstopper]: https://github.com/EverlastingBugstopper
     [pull/846]: https://github.com/cloudflare/wrangler/pull/846
 
   - **Update the author of the npm package - [EverlastingBugstopper], [pull/836]**
 
     The author of the npm package is now [wrangler@cloudflare.com](mailto:wrangler@cloudflare.com)
 
-    [EverlastingBugstopper]: https://github.com/EverlastingBugstopper
+    [everlastingbugstopper]: https://github.com/EverlastingBugstopper
     [pull/836]: https://github.com/cloudflare/wrangler/pull/836
 
   - **Remove unused code warnings when running tests - [pradovic], [issue/818] [pull/832]**
@@ -1179,7 +1284,7 @@
 
   - **Move the code for each subcommand to its own directory - [EverlastingBugstopper], [pull/831]**
 
-    [EverlastingBugstopper]: https://github.com/EverlastingBugstopper
+    [everlastingbugstopper]: https://github.com/EverlastingBugstopper
     [pull/831]: https://github.com/cloudflare/wrangler/pull/831
 
   - **Refactor upload forms - [ashleymichal], [pull/826]**
@@ -1193,7 +1298,7 @@
 
     Wrangler's npm installer version now only needs updating in the package.json instead of both the package.json and the source code.
 
-    [EverlastingBugstopper]: https://github.com/EverlastingBugstopper
+    [everlastingbugstopper]: https://github.com/EverlastingBugstopper
     [pull/817]: https://github.com/cloudflare/wrangler/pull/817
     [issue/812]: https://github.com/cloudflare/wrangler/issues/812
 
@@ -1210,7 +1315,7 @@
 
     The demo gif at the top of the README now accurately reflects the behavior of the latest Wrangler release.
 
-    [EverlastingBugstopper]: https://github.com/EverlastingBugstopper
+    [everlastingbugstopper]: https://github.com/EverlastingBugstopper
     [pull/868]: https://github.com/cloudflare/wrangler/pull/868
     [issue/843]: https://github.com/cloudflare/wrangler/issues/843
 
@@ -1457,9 +1562,9 @@
 
   **Ensure we install and cache the latest version of cargo-generate and wasm-pack if user has an outdated cargo installed version - [EverlastingBugstopper], [issue/666] [pull/726]**
 
-    Wrangler orchestrates a few other tools under the hood, notably [`wasm-pack`](https://github.com/rustwasm/wasm-pack) and [`cargo-generate`](https://github.com/ashleygwilliams/cargo-generate). We use a library called [`binary-install`](https://github.com/rustwasm/binary-install) to fetch and cache binaries we download. However, to avoid downloading unnecessarily, we first check if the user has a copy locally on their machine that they had `cargo install`'d. We had a bug where in this logic branch, we *didn't* check that the local version was the most up-to-date version. This meant that users who had an older installed version may run into errors when wrangler expected to use features of a newer version of that tool. This PR adds the logic to check for the version and will install and cache a newer version for wrangler to use (leaving your local version as is!).
+  Wrangler orchestrates a few other tools under the hood, notably [`wasm-pack`](https://github.com/rustwasm/wasm-pack) and [`cargo-generate`](https://github.com/ashleygwilliams/cargo-generate). We use a library called [`binary-install`](https://github.com/rustwasm/binary-install) to fetch and cache binaries we download. However, to avoid downloading unnecessarily, we first check if the user has a copy locally on their machine that they had `cargo install`'d. We had a bug where in this logic branch, we _didn't_ check that the local version was the most up-to-date version. This meant that users who had an older installed version may run into errors when wrangler expected to use features of a newer version of that tool. This PR adds the logic to check for the version and will install and cache a newer version for wrangler to use (leaving your local version as is!).
 
-  [EverlastingBugstopper]: https://github.com/EverlastingBugstopper
+  [everlastingbugstopper]: https://github.com/EverlastingBugstopper
   [issue/666]: https://github.com/cloudflare/wrnagler/issues/666
   [pull/726]: https://github.com/cloudflare/wrangler/pull/726
 
@@ -1467,7 +1572,7 @@
 
     Have you ever run `wrangler preview` in your project and wondered why the URL to preview your application is `000000000000000000.cloudflareworkers.com`? The writer of this CHANGELOG finds it confusing, too: this PR removes that line, making it easier to parse the output from `wrangler preview`.
 
-    [EverlastingBugstopper]: https://github.com/EverlastingBugstopper
+    [everlastingbugstopper]: https://github.com/EverlastingBugstopper
     [pull]: https://github.com/cloudflare/wrangler/pull/698
 
   - **Make install actually fail if the release can't be downloaded - [zackbloom], [pull/672]**
@@ -1501,7 +1606,7 @@
     For our default build type, aptly named "webpack", Wrangler uses webpack under the hood to bundle all of your assets. We hadn't documented how we do that, what our default config is, and how you can specify your own custom webpack config if you'd like. We have those docs now, so [check them out]!
 
     [check them out]: https://github.com/cloudflare/wrangler/blob/master/docs/content/webpack.md
-    [EverlastingBugstopper]: https://github.com/EverlastingBugstopper
+    [everlastingbugstopper]: https://github.com/EverlastingBugstopper
     [issue/721]: https://github.com/cloudflare/wrangler/issues/721
     [pull/724]: https://github.com/cloudflare/wrangler/pull/724
 
@@ -1535,7 +1640,7 @@
 
     To support developers transitioning to environments, we've written documentation for the feature, including further information about deprecations and advanced usage. [Check out the documentation here!](https://github.com/cloudflare/wrangler/blob/master/docs/content/environments.md)
 
-    [EverlastingBugstopper]: https://github.com/EverlastingBugstopper
+    [everlastingbugstopper]: https://github.com/EverlastingBugstopper
     [issue/385]: https://github.com/cloudflare/wrangler/issues/385
     [pull/386]: https://github.com/cloudflare/wrangler/pull/386
 
@@ -1622,7 +1727,7 @@
     ✨  Successfully published your script to example.com/*
     ```
 
-    [EverlastingBugstopper]: https://github.com/EverlastingBugstopper
+    [everlastingbugstopper]: https://github.com/EverlastingBugstopper
     [issue/523]: https://github.com/cloudflare/wrangler/issues/523
     [pull/584]: https://github.com/cloudflare/wrangler/pull/584
 
@@ -1663,7 +1768,7 @@
 
     KV subcommands would return the same emoji value in `--help` output. This PR updates the command-line output to use different emoji, making the output easier to read!
 
-    [EverlastingBugstopper]: https://github.com/EverlastingBugstopper
+    [everlastingbugstopper]: https://github.com/EverlastingBugstopper
     [pull/605]: https://github.com/cloudflare/wrangler/pull/605
 
 - ### Maintenance
@@ -1672,7 +1777,7 @@
 
     This PR improves the discoverability for wrangler on npm by adding keywords to the installer's `package.json`.
 
-    [EverlastingBugstopper]: https://github.com/EverlastingBugstopper
+    [everlastingbugstopper]: https://github.com/EverlastingBugstopper
     [pull/583]: https://github.com/cloudflare/wrangler/pull/583
 
   - **Clean up emoji - [xortive], [pull/455]**
@@ -1688,12 +1793,12 @@
 
     This PR adds documentation in our README for `wrangler init`, which allows you to begin using an existing project with Wrangler.
 
-    [EverlastingBugstopper]: https://github.com/EverlastingBugstopper
+    [everlastingbugstopper]: https://github.com/EverlastingBugstopper
     [pull/585]: https://github.com/cloudflare/wrangler/pull/585
 
   - **Remove link to docs for installation because they link back to wrangler README - [EverlastingBugstopper], [pull/494]**
 
-    [EverlastingBugstopper]: https://github.com/EverlastingBugstopper
+    [everlastingbugstopper]: https://github.com/EverlastingBugstopper
     [pull/494]: https://github.com/cloudflare/wrangler/pull/494
 
   - **Minor formatting fix in README.md - [kentonv], [pull/515]**
@@ -1738,7 +1843,7 @@
 
     This PR cleans up the README and adds additional links to the [Workers documentation](https://workers.cloudflare.com/docs) to improve consistency around Wrangler documentation.
 
-    [EverlastingBugstopper]: https://github.com/EverlastingBugstopper
+    [everlastingbugstopper]: https://github.com/EverlastingBugstopper
     [pull/440]: https://github.com/cloudflare/wrangler/pull/440
 
   - **Link to docs for update instructions - [ashleymichal], [pull/422]**
@@ -1765,7 +1870,7 @@
 
     This PR cleans up some incorrectly named tests and adds fixtures to support testing new functionality in 1.3.1, such as environments. ✨
 
-    [EverlastingBugstopper]: https://github.com/EverlastingBugstopper
+    [everlastingbugstopper]: https://github.com/EverlastingBugstopper
     [pull/563]: https://github.com/cloudflare/wrangler/pull/563
 
   - **Guard test against potential races - [xtuc], [pull/567]**
@@ -1867,7 +1972,7 @@
 
     This PR updates the last remaining instances where `wrangler` was using hard-coded emojis for messages, rather than using `terminal::emoji`. In addition, there are two instances where this PR changes the usage of the ⛔ emoji to ⚠️.
 
-    [EverlastingBugstopper]: https://github.com/EverlastingBugstopper
+    [everlastingbugstopper]: https://github.com/EverlastingBugstopper
     [pull/382]: https://github.com/cloudflare/wrangler/pull/382
 
   - **Move test fixtures to their own directory - [EverlastingBugstopper], [pull/383]**
@@ -1875,14 +1980,14 @@
     This PR aggregates fixtures used in integration tests into a `fixtures` directory to
     make it easier to find/use them.
 
-    [EverlastingBugstopper]: https://github.com/EverlastingBugstopper
+    [everlastingbugstopper]: https://github.com/EverlastingBugstopper
     [pull/383]: https://github.com/cloudflare/wrangler/pull/383
 
   - **Update issue templates to fit GitHub's data model - [EverlastingBugstopper], [pull/387]**
 
     Our previous issue templates were not picked up by GitHub's user interface. This PR updates the templates to fit the accepted data model, and adds some style tweaks to make the templates easier to use.
 
-    [EverlastingBugstopper]: https://github.com/EverlastingBugstopper
+    [everlastingbugstopper]: https://github.com/EverlastingBugstopper
     [pull/387]: https://github.com/cloudflare/wrangler/pull/387
 
   - **Move Emoji formatting/messaging into new functions - [ashleymichal], [pull/391]**
@@ -2141,7 +2246,7 @@ Wrangler 1.1.0 includes a number of improvements to documentation and project st
 
   - **Clarified intro link in README - [tomByrer], [pull/257]**
 
-    [tomByrer]: https://github.com/tomByrer
+    [tombyrer]: https://github.com/tomByrer
     [pull/257]: https://github.com/cloudflare/wrangler/pull/257
 
   - **Make it more clear that you can install Wrangler though npm - [zackbloom], [pull/241]**
@@ -2241,7 +2346,7 @@ Wrangler 1.1.0 includes a number of improvements to documentation and project st
 
     All HTTP requests to the Cloudflare API are now made with an authenticated HTTP client.
 
-    [Electroid]: https://github.com/Electroid
+    [electroid]: https://github.com/Electroid
     [issue/238]: https://github.com/cloudflare/wrangler/issue/238
     [pull/267]: https://github.com/cloudflare/wrangler/pull/267
 
@@ -2321,7 +2426,7 @@ This release includes many changes to the developer experience for Wrangler, inc
     dependency. Some users may run into issue with it! We've documented the steps to fix it on MacOS-
     if you run into this on other platforms, we'd love a PR!
 
-    [AustinCorridor]: https://github.com/AustinCorridor
+    [austincorridor]: https://github.com/AustinCorridor
     [issue/35]: https://github.com/cloudflare/wrangler/issues/35
     [pull/43]: https://github.com/cloudflare/wrangler/pull/43
 
