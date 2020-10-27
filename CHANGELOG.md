@@ -6,7 +6,8 @@
 
   - **Add support for Cron triggers - [ObsidianMinor], [issue/1574] [pull/1592]**
 
-    Detailed description
+    Cron triggers are a new Cloudflare Workers feature
+    which allow you to schedule execution times to call your workers. 
 
     [obsidianminor]: https://github.com/ObsidianMinor
     [pull/1592]: https://github.com/cloudflare/wrangler/pull/1592
@@ -14,10 +15,12 @@
 
   - **Structured output for `wrangler publish` - [nataliescottdavidson], [issue/1460] [pull/1538] [pull/1528] [pull/1522]**
 
-    Detailed description
+    `wrangler publish --output json` produces structured json output which can be parsed with tools such as jq.
 
     [nataliescottdavidson]: https://github.com/nataliescottdavidson
     [pull/1538]: https://github.com/cloudflare/wrangler/pull/1538
+    [pull/1528]: https://github.com/cloudflare/wrangler/pull/1528
+    [pull/1522]: https://github.com/cloudflare/wrangler/pull/1522
     [issue/1460]: https://github.com/cloudflare/wrangler/issues/1460
 
   - **Upload .well-known dotfiles - [nataliescottdavidson], [issue/980] [pull/1566]**
@@ -44,22 +47,16 @@
     Stalebot now waits 180 days to mark stale, it marks 'timed out' instead of 'wontfix', and added 'never stale' tag.
 
     [ispivey]: https://github.com/ispivey
-    [pull/pr #]: https://github.com/cloudflare/wrangler/pull/1561
-
-    [issue/Issue #]: https://github.com/cloudflare/wrangler/issues/Issue #
+    [pull/1561]: https://github.com/cloudflare/wrangler/pull/1561
 
   - **Pin Rust to 1.47 and fix clippy lints - [ObsidianMinor], [pull/1609]**
-
-    Detailed description
-
     [obsidianminor]: https://github.com/ObsidianMinor
 
-    [pull/PR #]: https://github.com/cloudflare/wrangler/pull/PR #
-    [issue/Issue #]: https://github.com/cloudflare/wrangler/issues/Issue #
+    [pull/1609]: https://github.com/cloudflare/wrangler/pull/1609
 
   - **Copy edit on --host argument description - [thmsdnnr], [issue/1545] [pull/1564]**
 
-    [author]: https://github.com/thmsdnnr
+    [thmsdnnr]: https://github.com/thmsdnnr
     [pull/1564]: https://github.com/cloudflare/wrangler/pull/1564
     [issue/1545]: https://github.com/cloudflare/wrangler/issues/1545
 
@@ -69,8 +66,6 @@
 
     [jspspike]: https://github.com/jspspike
     [pull/1516]: https://github.com/cloudflare/wrangler/pull/1516
-
-    [issue/Issue #]: https://github.com/cloudflare/wrangler/issues/Issue #
 
 - ### Docs
 
@@ -98,10 +93,8 @@
 
   - **Docs for ARM users - [rathboma], [pull/1499]**
 
-    Detailed description
-
-    [rathboma]: https://github.com/rathboma
-    [pull/1499]: https://github.com/cloudflare/wrangler/pull/1499
+  [rathboma]: https://github.com/rathboma
+  [pull/1499]: https://github.com/cloudflare/wrangler/pull/1499
 
     [issue/Issue #]: https://github.com/cloudflare/wrangler/issues/Issue #
 
