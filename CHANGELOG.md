@@ -7,7 +7,7 @@
   - **Add support for Cron triggers - [ObsidianMinor], [issue/1574] [pull/1592]**
 
     Cron triggers are a new Cloudflare Workers feature
-    which allow you to schedule execution times to call your workers. 
+    which allow you to schedule execution times to call your workers.
 
     [obsidianminor]: https://github.com/ObsidianMinor
     [pull/1592]: https://github.com/cloudflare/wrangler/pull/1592
@@ -89,14 +89,10 @@
   [pull/1526]: https://github.com/cloudflare/wrangler/pull/1526
   [pull/1519]: https://github.com/cloudflare/wrangler/pull/1519
 
-  [issue/Issue #]: https://github.com/cloudflare/wrangler/issues/Issue #
-
   - **Docs for ARM users - [rathboma], [pull/1499]**
 
   [rathboma]: https://github.com/rathboma
   [pull/1499]: https://github.com/cloudflare/wrangler/pull/1499
-
-    [issue/Issue #]: https://github.com/cloudflare/wrangler/issues/Issue #
 
 ## 🌊 1.11.0
 
