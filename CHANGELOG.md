@@ -8,38 +8,34 @@
 
     Detailed description
 
-    [author]: https://github.com/Author
-
-    [pull/PR #]: https://github.com/cloudflare/wrangler/pull/PR #
-    [issue/Issue #]: https://github.com/cloudflare/wrangler/issues/Issue #
+    [obsidianminor]: https://github.com/ObsidianMinor
+    [pull/1592]: https://github.com/cloudflare/wrangler/pull/1592
+    [issue/1574]: https://github.com/cloudflare/wrangler/issues/1574
 
   - **Structured output for `wrangler publish` - [nataliescottdavidson], [issue/1460] [pull/1538] [pull/1528] [pull/1522]**
 
     Detailed description
 
-    [author]: https://github.com/Author
+    [nataliescottdavidson]: https://github.com/nataliescottdavidson
+    [pull/1538]: https://github.com/cloudflare/wrangler/pull/1538
+    [issue/1460]: https://github.com/cloudflare/wrangler/issues/1460
 
-    [pull/PR #]: https://github.com/cloudflare/wrangler/pull/PR #
-    [issue/Issue #]: https://github.com/cloudflare/wrangler/issues/Issue #
+  - **Upload .well-known dotfiles - [nataliescottdavidson], [issue/980] [pull/1566]**
 
-    - **Upload .well-known dotfiles - [nataliescottdavidson], [issue/980] [pull/1566]**
+    Wrangler sites users requested the ability to include the .well-known folder
+    without including all hidden files.
 
-      Wrangler sites users requested the ability to include the .well-known folder
-      without including all hidden files.
-
-      [author]: https://github.com/Author
-
-      [pull/PR #]: https://github.com/cloudflare/wrangler/pull/PR #
-      [issue/Issue #]: https://github.com/cloudflare/wrangler/issues/Issue #
+    [nataliescottdavidson]: https://github.com/nataliescottdavidson
+    [pull/1566]: https://github.com/cloudflare/wrangler/pull/1566
+    [issue/980]: https://github.com/cloudflare/wrangler/issues/980
 
 - ### Fixes
 
   - **Handle leading slashes in KV keys - [koeninger], [issue/1560] [pull/1559]**
 
-    [author]: https://github.com/Author
-
-    [pull/PR #]: https://github.com/cloudflare/wrangler/pull/PR #
-    [issue/Issue #]: https://github.com/cloudflare/wrangler/issues/Issue #
+    [koeninger]: https://github.com/koeninger
+    [pull/1559]: https://github.com/cloudflare/wrangler/pull/1559
+    [issue/1560]: https://github.com/cloudflare/wrangler/issues/1560
 
 - ### Maintenance
 
@@ -47,33 +43,34 @@
 
     Stalebot now waits 180 days to mark stale, it marks 'timed out' instead of 'wontfix', and added 'never stale' tag.
 
-    [author]: https://github.com/Author
+    [ispivey]: https://github.com/ispivey
+    [pull/pr #]: https://github.com/cloudflare/wrangler/pull/1561
 
-    [pull/PR #]: https://github.com/cloudflare/wrangler/pull/PR #
     [issue/Issue #]: https://github.com/cloudflare/wrangler/issues/Issue #
 
   - **Pin Rust to 1.47 and fix clippy lints - [ObsidianMinor], [pull/1609]**
 
     Detailed description
 
-    [author]: https://github.com/Author
+    [obsidianminor]: https://github.com/ObsidianMinor
 
     [pull/PR #]: https://github.com/cloudflare/wrangler/pull/PR #
     [issue/Issue #]: https://github.com/cloudflare/wrangler/issues/Issue #
 
   - **Copy edit on --host argument description - [thmsdnnr], [issue/1545] [pull/1564]**
-    [Author]: https://github.com/Author
-    [pull/PR #]: https://github.com/cloudflare/wrangler/pull/PR #
+
+    [author]: https://github.com/thmsdnnr
+    [pull/1564]: https://github.com/cloudflare/wrangler/pull/1564
+    [issue/1545]: https://github.com/cloudflare/wrangler/issues/1545
+
+  - **Hide stderr from browser process - [jspspike], [pull/1516]**
+
+    Wrangler login had the potential to cause random terminal output.
+
+    [jspspike]: https://github.com/jspspike
+    [pull/1516]: https://github.com/cloudflare/wrangler/pull/1516
+
     [issue/Issue #]: https://github.com/cloudflare/wrangler/issues/Issue #
-
-    - **Hide stderr from browser process - [jspspike], [pull/1516]**
-
-      Wrangler login had the potential to cause random terminal output.
-
-      [author]: https://github.com/Author
-
-      [pull/PR #]: https://github.com/cloudflare/wrangler/pull/PR #
-      [issue/Issue #]: https://github.com/cloudflare/wrangler/issues/Issue #
 
 - ### Docs
 
@@ -82,25 +79,30 @@
   Permissions errors occur when users install Node or npm with a different package
   manager.
 
-  [author]: https://github.com/Author
-
-  [pull/PR #]: https://github.com/cloudflare/wrangler/pull/PR #
-  [issue/Issue #]: https://github.com/cloudflare/wrangler/issues/Issue #
+  [jasoncoombs]: https://github.com/JasonCoombs
+  [pull/1518]: https://github.com/cloudflare/wrangler/pull/1518
+  [issue/1517]: https://github.com/cloudflare/wrangler/issues/1517
 
   - **Update links to new docs- [stof] [tuladhar] [ispivey] [rita3ko], [pull/1552] [pull/1532] [pull/1526] [pull/1519]**
 
-    [author]: https://github.com/Author
+  [ispivey]: https://github.com/ispivey
+  [stof]: https://github.com/stof
+  [tuladhar]: https://github.com/tuladhar
+  [rita3ko]: https://github.com/rita3ko
+  [pull/1552]: https://github.com/cloudflare/wrangler/pull/1552
+  [pull/1532]: https://github.com/cloudflare/wrangler/pull/1532
+  [pull/1526]: https://github.com/cloudflare/wrangler/pull/1526
+  [pull/1519]: https://github.com/cloudflare/wrangler/pull/1519
 
-    [pull/PR #]: https://github.com/cloudflare/wrangler/pull/PR #
-    [issue/Issue #]: https://github.com/cloudflare/wrangler/issues/Issue #
+  [issue/Issue #]: https://github.com/cloudflare/wrangler/issues/Issue #
 
-  - **Docs for ARM users - [Author], [pull/1499]**
+  - **Docs for ARM users - [rathboma], [pull/1499]**
 
     Detailed description
 
-    [author]: https://github.com/Author
+    [rathboma]: https://github.com/rathboma
+    [pull/1499]: https://github.com/cloudflare/wrangler/pull/1499
 
-    [pull/PR #]: https://github.com/cloudflare/wrangler/pull/PR #
     [issue/Issue #]: https://github.com/cloudflare/wrangler/issues/Issue #
 
 ## 🌊 1.11.0
